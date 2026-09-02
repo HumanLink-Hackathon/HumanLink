@@ -1,0 +1,39 @@
+name: Feature Request
+description: Propose a new feature or enhancement for HumanLink
+title: "[FEATURE] <title>"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing a feature idea to HumanLink!
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: Feature Description
+      description: Clear and concise description of what the feature does.
+    validations:
+      required: true
+  - type: dropdown
+    id: domain_area
+    attributes:
+      label: Domain / Feature Area
+      options:
+        - Speech Recognition (Twi/English)
+        - Translation Pipeline
+        - Live Captions & Visuals
+        - Sign Language Library
+        - Accessibility Controls
+        - Financial Services / MTN MoMo Demo
+        - UI / UX Design
+        - Backend & Cloud Services
+    validations:
+      required: true
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User Story & Accessibility Impact
+      description: How does this help Deaf/hard-of-hearing or local language speakers?
+      placeholder: "As a [type of user], I want [goal] so that [benefit]..."
+    validations:
+      required: false
